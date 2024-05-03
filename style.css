@@ -62,7 +62,6 @@ header {
   bottom: 0;
   width: 100%;
   padding: 0px;
-  text-align: center;
 }
 
 .list {
@@ -79,6 +78,7 @@ header {
 .menu-item {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .icon {
