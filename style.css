@@ -3,6 +3,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+  padding-top: 120px;
+}
+
 header {
   background-color: orangered;
   color: #fff;
@@ -22,7 +26,7 @@ header {
   margin: 20px;
   padding: 20px;
   background-color: #f9f9f9;
-  position: absolute;
+  position: relative;
 }
 
 .question,
@@ -30,11 +34,22 @@ header {
   margin-bottom: 10px;
   text-align: center;
 }
-
-.answer {
-  display: none;
+.toggle-answer {
+  display: inline-block;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 16px;
+  margin: 16px;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
-.hidden {
-  display: none;
+.toggle-answer:hover {
+  background-color: orange;
+}
+
+.toggle-answer:active {
+  background-color: orangered;
 }
